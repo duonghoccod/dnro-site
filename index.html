@@ -80,6 +80,44 @@
       </div>
     </div>
   </footer>
+  <!-- Thêm vào cuối body của trang HTML -->
+<a href="https://www.facebook.com/YourPage" target="_blank" class="support-btn" id="supportBtn">
+    Hỗ Trợ
+</a>
+
+<style>
+/* Nút nổi hỗ trợ */
+.support-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s, background-color 0.2s;
+    z-index: 9999;
+}
+.support-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+</style>
+
+<script>
+// Tùy chọn để mở Zalo nếu muốn
+document.getElementById("supportBtn").addEventListener("click", function() {
+    // Ví dụ mở Facebook
+    window.open("https://www.facebook.com/YourPage", "_blank");
+    
+    // Nếu muốn mở Zalo, thay bằng link Zalo OA hoặc zalo://
+    // window.open("https://zalo.me/yourid", "_blank");
+});
+</script>
+
 
   </body>
 </html>
